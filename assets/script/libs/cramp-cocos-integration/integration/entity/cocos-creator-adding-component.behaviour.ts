@@ -1,4 +1,4 @@
-import CocosCreatorCachedComponent from "../../components/component/cc.cached.component";
+import CocosCreatorCachedComponent from "../component/cc.cached.component";
 import { IEntityComponentManipulationBehaviour, INodeEntity } from "../../cramp/type-definitions/interfaces";
 import { ComponentConstructor } from "../../cramp/type-definitions/types";
 import { ICocosCreatorEntity } from "../../types/cc-intergration.interfaces"

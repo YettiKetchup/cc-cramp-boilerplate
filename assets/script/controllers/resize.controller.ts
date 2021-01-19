@@ -1,6 +1,9 @@
 import { Storages } from "../enums/storages.enum";
 import GlobalEntitiesStorage from "../libs/cramp-cocos-integration/cramp/storage/global-entities.storage";
-import { IEntity, IEntityStorage, ISystemsContainer } from "../libs/cramp-cocos-integration/cramp/type-definitions/interfaces";
+import { IEntity, IEntityStorage } from "../libs/cramp-cocos-integration/cramp/type-definitions/interfaces";
+import { CCScreenOrientation } from "../libs/cramp-cocos-integration/modules/resize-module/resize-module-definitions/resize-module.enums";
+import ResizeModule from "../libs/cramp-cocos-integration/modules/resize-module/resize.module";
+import aspectRatioUtility from "../libs/cramp-cocos-integration/modules/resize-module/utils/aspect-ratio.utility";
 
 const {ccclass, property} = cc._decorator;
 
@@ -19,16 +22,18 @@ export default class ResizeController extends cc.Component {
     portrait: cc.Vec2 = new cc.Vec2(0, 0);
 
     private _canvasHTMLElement: HTMLCanvasElement = null;
-    private _resizeContainer: ISystemsContainer = null;
     private _entityStorage: IEntityStorage<IEntity<cc.Component>> = null;
+    private _resizeModule: ResizeModule = null;
  
     protected onLoad() {
+        this._canvasHTMLElement = document.querySelector(this.canvasElementRef);
         this._entityStorage = GlobalEntitiesStorage.combine(
             Storages.UI_GAME_COMBINED,
             [Storages.GAME, Storages.UI]
         );
-        this._canvasHTMLElement = document.querySelector(this.canvasElementRef);
-        // this._resizeContainer = new OnResizeContainer().create(this._entityStorage);
+        
+        this._resizeModule = new ResizeModule(this._entityStorage);
+        this._resizeModule.init();
     }
  
     start () {
@@ -37,15 +42,16 @@ export default class ResizeController extends cc.Component {
     }
  
     private _resize() {
-        // const { portrait, landscape } = this;
-        // const { width, height } = this._canvasHTMLElement;
+        const { portrait, landscape } = this;
+        const { width, height } = this._canvasHTMLElement;
+        const aspectRatio = aspectRatioUtility(width, height);
  
-        // const orientation = this._canvasHTMLElement.width > this._canvasHTMLElement.height
-        //     ? ECSScreenOrientation.LANDSCAPE
-        //     : ECSScreenOrientation.PORTRAIT;
+        const orientation = this._canvasHTMLElement.width > this._canvasHTMLElement.height
+            ? CCScreenOrientation.LANDSCAPE
+            : CCScreenOrientation.PORTRAIT;
  
-        // cc.view.setDesignResolutionSize(width, height, cc.ResolutionPolicy.UNKNOWN);
-        // this._resizeContainer.execute({ orientation, landscape, portrait });
+        cc.view.setDesignResolutionSize(width, height, cc.ResolutionPolicy.UNKNOWN);
+        this._resizeModule.execute({orientation, landscape, portrait, aspectRatio});
     }
 
 }

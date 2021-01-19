@@ -1,5 +1,5 @@
 import { Storages } from "../enums/storages.enum";
-import CocosCreatorEntity from "../libs/cramp-cocos-integration/components/entity/cc.entity";
+import CocosCreatorEntity from "../libs/cramp-cocos-integration/integration/entity/cc.entity";
 import GlobalEntitiesStorage from "../libs/cramp-cocos-integration/cramp/storage/global-entities.storage";
 import { IEntity, IEntityStorage } from "../libs/cramp-cocos-integration/cramp/type-definitions/interfaces";
 
