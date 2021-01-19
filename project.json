@@ -1,0 +1,8 @@
+{
+  "engine": "cocos2d-html5",
+  "packages": "packages",
+  "version": "2.4.3",
+  "name": "cramp-integration-boilerplate",
+  "id": "3c89f928-d955-4e2e-a6cf-d195a48b65df",
+  "isNew": false
+}
