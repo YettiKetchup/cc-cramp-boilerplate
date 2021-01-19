@@ -1,0 +1,4 @@
+[submodule "assets/script/libs/cramp-cocos-integration/cramp"]
+	path = assets/script/libs/cramp-cocos-integration/cramp
+	url = https://github.com/YettiKetchup/cramp.git
+	branch = main
