@@ -4,7 +4,7 @@
 
 Cramp framework and Cocos Creator engine integration boilerplate.
 
-For more details see: https://github.com/YettiKetchup/cramp
+For more details about Cramp see: https://github.com/YettiKetchup/cramp
 
 # Instalation
 git clone --recursive https://github.com/YettiKetchup/cc-cramp-boilerplate.git
