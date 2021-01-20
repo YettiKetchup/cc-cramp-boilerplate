@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "5ba2e73c-87d1-46f5-b361-43329dbf257f",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 325,
+  "height": 643,
+  "platformSettings": {},
+  "subMetas": {
+    "cramp_logo": {
+      "ver": "1.0.4",
+      "uuid": "4b9db5a2-0b92-43da-8054-f1965227a3ee",
+      "rawTextureUuid": "5ba2e73c-87d1-46f5-b361-43329dbf257f",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 325,
+      "height": 643,
+      "rawWidth": 325,
+      "rawHeight": 643,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
