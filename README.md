@@ -1,7 +1,7 @@
 # Cramp CocosCreator 2x integration boilerplate
 ![alt text](https://i.ibb.co/FDqDk98/cramp-logo-small.png)
 ![alt text](https://i.ibb.co/WzcNHcP/ds-logo-small.png)
-![alt text](https://apptractor.ru/wp-content/uploads/2014/03/Cocos2d-x.png)
+![alt text](https://programmer.help/images/blog/21b7164ab4b1ed84a8e7d60476d8a46b.jpg)
 
 Cramp framework and Cocos Creator engine integration boilerplate.
 
