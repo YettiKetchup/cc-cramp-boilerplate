@@ -3,9 +3,12 @@
 
 Подробная документация Cramp: https://github.com/YettiKetchup/cramp
 
+
 # Установка
 
-git clone --recursive https://github.com/YettiKetchup/cc-cramp-boilerplate.git
+Скачать проект с сабмодулями: git clone --recursive https://github.com/YettiKetchup/cc-cramp-boilerplate.git
+
+Переключить ветку саб-модуля Cramp на main (если это не произошло автоматически)
 
 
 # Использование
@@ -21,3 +24,18 @@ git clone --recursive https://github.com/YettiKetchup/cc-cramp-boilerplate.git
 - Чтобы добавить Компонент к Сущности необходимо лишь добавить Компонент к Ноде также, как это делается в оригинальном движке.
 
 - Точками входа являются Контроллеры.
+
+
+# Другие интеграционные бойлерплейты
+
+CocosCreator 2x - https://github.com/YettiKetchup/cc-cramp-boilerplate
+
+CocosCreator 3x - В процессе разработки...
+
+PlayCanvas - В процессе разработки...
+
+NodeJS (TypeScript) - В процессе разработки...
+
+# Примеры
+
+Cramp API Example: https://github.com/YettiKetchup/cramp-pure-example
