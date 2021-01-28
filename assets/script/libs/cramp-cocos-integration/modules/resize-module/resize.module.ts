@@ -10,12 +10,14 @@ export default class ResizeModule implements ICrampModule<CCOrientationData> {
 
     constructor(private _entityStorage: IEntityStorage<IEntity<cc.Component>>) { }
 
-    init(): void {
+    public init(): void {
         this._resizeContainer = new ResizeModuleContainerFactory().create(this._entityStorage);
     }
 
-    execute(data?: CCOrientationData): void {
+    public execute(data?: CCOrientationData): void {
         this._resizeContainer.execute(data);
     }
+
+    public destroy(): void {}
 
 }
