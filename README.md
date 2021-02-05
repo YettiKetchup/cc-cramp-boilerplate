@@ -18,11 +18,11 @@
 Всего существует 5 биндингов, однако, при необходимости, пользователь может добавить во все свои окружения еще. Все биндинги описаны в файле bindings.types.ts и могут быть переопределены.
 
 ```
-export class            CrampComponent extends          cc.Component {};
-export class            CrampCachedComponent extends    CocosCreatorCachedComponent {};
-export class            CrampNode extends               cc.Node {};
-export abstract class   CrampSystem<TData> extends      CocosCreatorSystem<TData> {};
-export class            CrampEntity extends             CocosCreatorEntity {};
+export class            CrampComponent          extends     cc.Component {};
+export class            CrampCachedComponent    extends     CocosCreatorCachedComponent {};
+export class            CrampNode               extends     cc.Node {};
+export abstract class   CrampSystem<TData>      extends     CocosCreatorSystem<TData> {};
+export class            CrampEntity             extends     CocosCreatorEntity {};
 ```
 
 В итоге, благодаря биндингам, все наши Компоненты, Системы и Сущности выглядят одинаково, вне зависимости от того, в каком окружении они были созданы. 
