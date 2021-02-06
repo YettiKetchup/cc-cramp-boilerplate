@@ -1,5 +1,5 @@
 # Cramp CocosCreator 2x
-![alt text](https://i.ibb.co/q73GX25/ccc-boilerplate.jpg)
+![alt text](https://i.ibb.co/zsN1qLp/ccc-boilerplate-intro.jpg)
 
 Подробная документация Cramp: https://github.com/YettiKetchup/cramp
 
@@ -77,7 +77,10 @@ CocosCreator 3x - В процессе разработки...
 
 PlayCanvas - В процессе разработки...
 
-NodeJS (TypeScript) - В процессе разработки...
+Nest - https://github.com/YettiKetchup/nest-cramp-boilerplate
+
+Пользователь без проблем сможет сам синтегрировать Cramp в свой проект, следуя примеру одного из готовых бойлерплейтов.
+
 
 # Примеры
 
