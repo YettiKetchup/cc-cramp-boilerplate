@@ -29,7 +29,6 @@ export default class CocosCreatorEntity extends cc.Component
     private _componentDeletingBehaviour: IEntityComponentManipulationBehaviour<cc.Component, ICocosCreatorEntity>
         = new CachedComponentsDeletingComponentBehaviour(this._cache);
 
-    public get cache(): cc.Component[] { return this._cache.components; }
     public get components(): cc.Component[] { return this._components; }
     public get isActive(): boolean { return this.node.active; }
     public set isActive(value: boolean) { this.node.active = value; }
