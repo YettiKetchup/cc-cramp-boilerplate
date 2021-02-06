@@ -1,7 +1,7 @@
-import { IEntityFactory } from '../cramp/type-definitions/interfaces';
-import CocosCreatorCachedComponent from '../integration/component/cc.cached.component';
-import CocosCreatorEntity from '../integration/entity/cc.entity';
-import CocosCreatorSystem from '../integration/system/cc.system';
+import { IEntityFactory } from '../libs/cramp-cocos-integration/cramp/type-definitions/interfaces';
+import CocosCreatorCachedComponent from '../libs/cramp-cocos-integration/integration/component/cc.cached.component';
+import CocosCreatorEntity from '../libs/cramp-cocos-integration/integration/entity/cc.entity';
+import CocosCreatorSystem from '../libs/cramp-cocos-integration/integration/system/cc.system';
 
 
 
