@@ -1,4 +1,5 @@
 import ComponentsCache from "../../cramp/cache/components.cache";
+import ComponentStateController from "../../cramp/component-state-controller/component-state.controller";
 import BaseGettingComponentBehaviour from "../../cramp/core/entity/entity-behaviours/base-getting-component.behaviour";
 import CachedComponentsAddingComponentBehaviour from "../../cramp/core/entity/entity-behaviours/cached-components-adding-component.behaviour";
 import CachedComponentsDeletingComponentBehaviour from "../../cramp/core/entity/entity-behaviours/cached-components-deleting-component.behaviour";
@@ -59,7 +60,12 @@ export default class CocosCreatorEntity extends cc.Component
 
     onLoad() {
         const components = this.getComponents(cc.Component).filter(c => c instanceof CocosCreatorEntity ? false : true);
-        this._components.push(...components);
+
+        components.forEach(component => {
+            ComponentStateController.takeSnapshot(this.uuid, component);
+            this._components.push(component);
+        });
+        
         this._setCache(this._components);
     }
 

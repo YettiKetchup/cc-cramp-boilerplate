@@ -255,7 +255,7 @@
       "array": [
         0,
         0,
-        383.64925387650635,
+        520.4812676744476,
         0,
         0,
         0,
@@ -353,7 +353,7 @@
       "array": [
         0,
         0,
-        383.64925387650635,
+        520.4812676744476,
         0,
         0,
         0,
@@ -699,38 +699,6 @@
     "_id": "ff+Cr5cMJC77TKmW1CAreI"
   },
   {
-    "__type__": "cc.Sprite",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 13
-    },
-    "_enabled": true,
-    "_materials": [
-      {
-        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
-      }
-    ],
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_spriteFrame": {
-      "__uuid__": "4b9db5a2-0b92-43da-8054-f1965227a3ee"
-    },
-    "_type": 0,
-    "_sizeMode": 1,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_atlas": null,
-    "_id": "c4whiN141DFbWuC+uf6eek"
-  },
-  {
     "__type__": "8890aiDUM9IlqKGlx7o68vq",
     "_name": "",
     "_objFlags": 0,
@@ -762,6 +730,38 @@
       "y": 0.3
     },
     "_id": "afjqEZ7EZKdp3DgRgtxdNH"
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 13
+    },
+    "_enabled": true,
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_spriteFrame": {
+      "__uuid__": "4b9db5a2-0b92-43da-8054-f1965227a3ee"
+    },
+    "_type": 0,
+    "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_atlas": null,
+    "_id": "c4whiN141DFbWuC+uf6eek"
   },
   {
     "__type__": "403525UE4ZENoOw59sXtXlD",
@@ -1194,7 +1194,7 @@
       "__id__": 19
     },
     "_enabled": true,
-    "_id": "9eTGgdeplFxpfnUsFrs3co"
+    "_id": "5eYvJJhwJIApBClDbRHS6m"
   },
   {
     "__type__": "8890aiDUM9IlqKGlx7o68vq",
