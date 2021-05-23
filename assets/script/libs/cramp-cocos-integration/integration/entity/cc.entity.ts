@@ -96,7 +96,9 @@ export default class CocosCreatorEntity extends cc.Component
     }
 
     private _toggleCacheStatus(component: cc.Component, inCache: boolean): void {
-        component instanceof CocosCreatorCachedComponent ? component.inCache  = inCache : component.enabled = !inCache;
+        if(component) {
+            component instanceof CocosCreatorCachedComponent ? component.inCache  = inCache : component.enabled = !inCache;
+        }
     }
 
 }
